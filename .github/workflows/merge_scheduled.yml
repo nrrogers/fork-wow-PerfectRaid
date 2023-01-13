@@ -1,7 +1,7 @@
 name: Scheduled merge action
 on: 
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 1 * *'
 # scheduled for 00:00 everyday
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
         with:
           useremail: user@mail.com                 # set the user email for git commits
           username: user                  # set the user name for git commits
-          upstream: user/repo      # set the upstream repo
+          upstream: AngeliqueDawnbringer/PerfectRaid      # set the upstream repo
           upstream-branch: master   # set the upstream branch to merge from
           branch: master          # set the branch to merge to
           token: ${{ secrets.BIGWIGSPUSH }}
